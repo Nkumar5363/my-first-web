@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>free Agency</title>
+</head>
+<style>
+  body {
+
+    background-color: #faf9f6;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .img2 {
+    height: 169px;
+    width: 300px;
+    float: left;
+    margin-right: 16px;
+  }
+
+
+  .very {
+    height: 310px;
+    width:100%;
+    text-align: center;
+
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  span {
+    color: blue;
+  }
+
+  .one {
+    align-self: flex-end;
+
+  }
+
+   .parent>.first>img>p {
+    float:right;
+    margin: 0px;
+    padding-left: 320px;
+
+  }
+
+  .first {
+    height: 169px;
+    width: 500px;
+    /* background-color: red; */
+  }
+
+
+  h2 {
+    margin: 10px;
+   align-items: center;
+  }
+  @media (max-width:1000px)
+  {
+    .parent {
+      flex-direction: column;
+      gap:10px;
+    }
+    .one {
+      align-self: flex-start;
+
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .parent>.first>img>p 
+    {
+      float:initial;
+    }
+  }
+</style>
+
+<body>
+  <div class="parent">
+    <div class="very">
+      <img src="assets/images/logo.png" alt="logo">
+      <h1>We are <span>Creative</span> Design Agency</h1>
+    </div>
+
+    <div class=" one first">
+      <img src="assets/images/beautiful.jpg" alt="beauty" class="img2">
+      <h2>Beauty</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto, voluptatibus maiores laborum
+        perferendis saepe quos consequuntur voluptate qui dolores!</p>
+    </div>
+    <div class="second first">
+      <img src="assets/images/construction.jpg" alt="construction" class="img2">
+      <h2>Construction</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur magni possimus debitis, placeat quas
+        officia pariatur doloribus maxime tempore quod!</p>
+    </div>
+  </div>
+</body>
+
+</html>
